@@ -1,14 +1,9 @@
 {
-  "name": "sumanth-resume",
+  "name": "sumanth-portfolio",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "node index.js",
-    "postinstall": "ng build --prod",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "start": "node server.js",
+    "postinstall": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +19,7 @@
     "@types/file-saver": "^2.0.0",
     "core-js": "^2.5.4",
     "emailjs-com": "^2.3.2",
+    "express": "^4.16.4",
     "file-saver": "^2.0.1",
     "ng-snotify": "^4.3.1",
     "ngx-spinner": "^6.1.2",
