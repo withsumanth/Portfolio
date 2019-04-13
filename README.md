@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Portfolio Resume
 
@@ -11,3 +12,6 @@
 
 ## Release
 - ***Release 1.0.0*** - Fully static portfolio except contact module
+=======
+# Portfolio
+>>>>>>> 4771119e5a2ccf747089a73b47d1afadb46e0e74
