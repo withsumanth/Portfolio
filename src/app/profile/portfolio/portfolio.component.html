@@ -1,0 +1,23 @@
+<div class="section" id="projects">
+  <div class="container cc-experience">
+    <div class="h4 text-center mb-4 title">Projects</div>
+    <div class="card" *ngFor="let experience of exprienceData">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <div *ngIf='experience.id==1 ;else nolink'><a style="color:white" href="https://whatsinmycity.herokuapp.com" target="_blank"><div class="h5">{{experience?.organization}}</div></a></div>
+            <ng-template #nolink>
+              <div class="h5">{{experience?.organization}}</div>
+            </ng-template>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">{{experience?.designation}}</div>
+            <p [innerHTML]="experience?.details"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
