@@ -21,6 +21,12 @@ app.use(forceSSL());
 app.use(express.static(__dirname + '/dist'));
 // Start the app by listening on the default
 // Heroku port
+const letsEncryptReponse = process.env.CERTBOT_RESPONSE;
+
+// Return the Let's Encrypt certbot response:
+app.get('/.well-known/acme-challenge/:content', function(req, res) {
+  res.send(letsEncryptReponse);
+});
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
