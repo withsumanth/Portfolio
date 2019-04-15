@@ -87,7 +87,7 @@ export class ProfileService {
   exprienceData: any = [
     {
       'id': '1',
-      'from_to_month_year': 'June 2018 - December 2019',
+      'from_to_month_year': 'June 2018 - December 2018',
       'organization': 'Brightcove, Boston, MA, USA',
       'designation': 'Software Engineer Intern',
       'details': `Worked on creating a website in <strong>JavaScript, Node.js</strong> to allow customers to host their own video portal websites. This was built on <strong>React, jQuery and MongoDB</strong> which runs on <strong>AWS</strong> cloud computing platform. Also I managed <strong>Jenkins</strong> for running continuous integration and created automation scripts using <strong>Ruby</strong> and <strong>Capybara</strong>`
